@@ -20,7 +20,7 @@ setup(
     name='correlation_cuda',
     ext_modules=[
         CUDAExtension('correlation_cuda', [
-            'correlation_cuda.cc',
+            #'correlation_cuda.cc',
             'correlation_cuda_kernel.cu'
         ], extra_compile_args={'cxx': cxx_args, 'nvcc': nvcc_args})
     ],
