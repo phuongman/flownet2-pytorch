@@ -20,7 +20,7 @@ setup(
     name='resample2d_cuda',
     ext_modules=[
         CUDAExtension('resample2d_cuda', [
-            'resample2d_cuda.cc',
+            #'resample2d_cuda.cc',
             'resample2d_kernel.cu'
         ], extra_compile_args={'cxx': cxx_args, 'nvcc': nvcc_args})
     ],
