@@ -19,7 +19,7 @@ setup(
     name='channelnorm_cuda',
     ext_modules=[
         CUDAExtension('channelnorm_cuda', [
-            'channelnorm_cuda.cc',
+            #'channelnorm_cuda.cc',
             'channelnorm_kernel.cu'
         ], extra_compile_args={'cxx': cxx_args, 'nvcc': nvcc_args})
     ],
